@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="614.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seals.inventorymanagement.controllers.ModifyPartController">
+    <children>
+        <Label layoutX="51.0" layoutY="34.0" text="Modify Part">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font></Label>
+        <RadioButton fx:id="inHouseRadioBtn" layoutX="183.0" layoutY="35.0" mnemonicParsing="false" onAction="#inHouseRadioBtnPushed" text="In-House" />
+        <RadioButton fx:id="outsourcedRadioBtn" layoutX="305.0" layoutY="35.0" mnemonicParsing="false" onAction="#outsourcedRadioBtnPushed" text="Outsourced" />
+        <Label layoutX="326.0" layoutY="280.0" text="Min" />
+        <VBox layoutX="49.0" layoutY="151.0" pickOnBounds="false" prefHeight="257.0" prefWidth="103.0" spacing="15.0">
+            <children>
+                <Label text="ID" />
+                <Label text="Name" />
+                <Label text="Inv" />
+                <Label text="Price/Cost" />
+                <Label text="Max" />
+                <Label fx:id="modifyMachineIdCompanyNameLabel" text="Machine ID" />
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            </children>
+        </VBox>
+        <TextField fx:id="modifyId" disable="true" layoutX="156.0" layoutY="151.0" promptText="Auto Gen - Disabled" />
+        <TextField fx:id="modifyName" layoutX="156.0" layoutY="182.0" />
+        <TextField fx:id="modifyInv" layoutX="156.0" layoutY="214.0" />
+        <TextField fx:id="modifyCost" layoutX="156.0" layoutY="245.0" />
+        <TextField fx:id="modifyMax" layoutX="156.0" layoutY="276.0" />
+        <TextField fx:id="modifyMachineIdCompanyName" layoutX="156.0" layoutY="307.0" />
+        <TextField fx:id="modifyMin" layoutX="362.0" layoutY="276.0" />
+        <Button layoutX="285.0" layoutY="408.0" mnemonicParsing="false" onAction="#saveModifyBtnPushed" text="Save" />
+        <Button layoutX="347.0" layoutY="408.0" mnemonicParsing="false" onAction="#cancelBtnPushed" text="Cancel" />
+    </children>
+</AnchorPane>
